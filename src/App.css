@@ -4,6 +4,9 @@
 
 body{
   background-color: aqua;
+  border-radius: 5px;
+
+  
 }
 .container{
   background-color: green;
@@ -13,13 +16,15 @@ body{
   padding: 20px;
   margin-top: 3%;
   text-align: center;
+  border-radius: 63px;
 
 }
 .heading{
   width: 100%;
   padding: 10px;
-  font-size: 50px;
+  font-size: 66px;
   color: white ;
+  font-weight: bolder;
 }
 
 input{
@@ -45,24 +50,31 @@ button:hover{
   background-color: peru;
 }
 .list-heading{
-  width: 60%;
-  font-size: 50px;
+  width: 42%;
+  font-size: 35px;
   background-color: cadetblue;
   text-align: left;
+  margin-left: 35px;
 }
 .list-data{
   color: black;
   font-size: 20px;
   text-align: left;
   padding-left: 30px;
-  width: 53%;
+  width: 50%;
   padding-bottom: 2%;
   padding-top: 2%;
   border-radius: 10px;
   background-color: bisque;
+  margin-left: 27px;
 }
 .btn-position{
   position: relative;
-  top: -49px;
-    left: 105px;
+  top: -56px;
+    left: 104px;
+    height: 53px;
+    width: 92px;
+}
+.btn-div{
+ margin: 0px;
 }

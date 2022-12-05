@@ -28,11 +28,11 @@ function Todolist(){
             <div className='heading'>Todo List</div>
             <input type="text" placeholder='add here your activities' value={activity} onChange={(e) => setActivity(e.target.value)} />
             <button onClick={addActivity}>Add</button>
-            <p className='list-heading'>Here is your List:{")"}</p>
+            <p className='list-heading'>Here is your List :{")"}</p>
             {listData !==[] && listData.map((data,i)=>{
                 return(
                     <>
-                    <p key={i}>
+                    <p className='btn-div' key={i}>
                         <div className='list-data'>{data}</div>
                         <div>
                             <button className='btn-position' onClick={()=>removeActivity(i)}>remove(-)</button>
@@ -44,6 +44,7 @@ function Todolist(){
             {listData.length >=1 && <button onClick={removeAll}>Remove All</button>
             }
         </div>
+        
         </>
     );
 }
