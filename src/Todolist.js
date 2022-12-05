@@ -15,7 +15,7 @@ function Todolist(){
     }
     function removeActivity(i){
             const updatedListData = listData.filter((elem,id)=>{
-                return i != id;
+                return i !== id;
             })
             setlistData(updatedListData);
     }
@@ -29,7 +29,7 @@ function Todolist(){
             <input type="text" placeholder='add here your activities' value={activity} onChange={(e) => setActivity(e.target.value)} />
             <button onClick={addActivity}>Add</button>
             <p className='list-heading'>Here is your List:{")"}</p>
-            {listData !=[] && listData.map((data,i)=>{
+            {listData !==[] && listData.map((data,i)=>{
                 return(
                     <>
                     <p key={i}>
